@@ -621,7 +621,7 @@ def load_checkpoint(checkpoint_dir, device='cpu', args=None):
                             weight_factor=args.weight_factor, time_granularity=time_granularity)
         kwargs = vars(args)
         kwargs['device'] = device
-        model = xERTE(nf, contents.num_entities, contents.num_relations, update_prev_edges=not args.stop_update_prev_edges, use_time_embedding=not args.no_time_embedding, **kwargs)
+        model = xERTE(nf, contents.num_entities, contents.num_relations, use_time_embedding=not args.no_time_embedding, **kwargs)
         # move a model to GPU before constructing an optimizer, http://pytorch.org/docs/master/optim.html
         model.to(device)
         model.entity_raw_embed.cpu()

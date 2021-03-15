@@ -206,7 +206,7 @@ if __name__ == "__main__":
         time_cost = reset_time_cost()
     whole_or_seen = args.whole_or_seen
     eval_batch_size = args.batch_size
-    if args.mongo or args.sqlit:
+    if args.mongo or args.sqlite:
         dbDriver = DBDriver(useMongo=True, useSqlite=args.sqlite, MongoServerIP=local_config.MongoServer,
                         sqlite_dir=os.path.join(save_dir, 'tKGR.db'))
 
@@ -330,6 +330,6 @@ if __name__ == "__main__":
     performance_dict = {k: float(v) for k, v in zip(performance_key, performance)}
     checkpoint_dir = os.path.dirname(checkpoint)
     _, epoch = os.path.basename(checkpoint).split("_")
-    if args.mongo or args.sqlit:
+    if args.mongo or args.sqlite:
         dbDriver.test_evaluation(checkpoint_dir, epoch[:-3], performance_dict)
         dbDriver.close()
