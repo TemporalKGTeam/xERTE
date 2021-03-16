@@ -352,7 +352,7 @@ class xERTE(torch.nn.Module):
                  DP_num_edges=40, DP_steps=3,
                  emb_static_ratio=1, diac_embed=False,
                  node_score_aggregation='sum', ent_score_aggregation='sum', max_attended_edges=20, ratio_update=0,
-                 device='cpu', analysis=False, use_time_embedding=True):
+                 device='cpu', analysis=False, use_time_embedding=True, **kwargs):
         """[summary]
 
         Arguments:
