@@ -34,10 +34,10 @@ save_dir = Path(__file__).parent.absolute()
 #### Run:
 Training:
 ```
-python train.py --warm_start_time 48 --emb_dim 256 128 64 32 --batch_size 128 --lr 0.0002 --dataset ICEWS14_forecasting --epoch 20 --sampling 3 --device 0 --DP_steps 3 --DP_num_edges 15 --max_attended_edges 40 --node_score_aggregation sum --ent_score_aggregation sum
-python train.py --warm_start_time 48 --emb_dim 256 128 64 32 --batch_size 128 --lr 0.0002 --dataset ICEWS0515_forecasting --epoch 20 --sampling 3 --device 0 --DP_steps 3 --DP_num_edges 15 --max_attended_edges 40 --node_score_aggregation sum --ent_score_aggregation sum
-python train.py --warm_start_time 48 --emb_dim 256 128 64 32 --batch_size 128 --lr 0.0002 --dataset ICEWS18_forecasting --epoch 20 --sampling 3 --device 0 --DP_steps 3 --DP_num_edges 15 --max_attended_edges 60 --node_score_aggregation sum --ent_score_aggregation sum --ratio_update 0.75
-python train.py --warm_start_time 48 --emb_dim 256 128 64 32 --batch_size 128 --lr 0.0002 --dataset YAGO1830 --epoch 20 --sampling 3 --device 0 --DP_steps 3 --DP_num_edges 15 --max_attended_edges 60 --node_score_aggregation sum --ent_score_aggregation sum --ratio_update 0.75
+python train.py --warm_start_time 48 --emb_dim 256 128 64 32 --batch_size 128 --lr 0.0002 --dataset ICEWS14_forecasting --epoch 10 --sampling 3 --device 0 --DP_steps 3 --DP_num_edges 15 --max_attended_edges 40 --node_score_aggregation sum --ent_score_aggregation sum
+python train.py --warm_start_time 48 --emb_dim 256 128 64 32 --batch_size 128 --lr 0.0002 --dataset ICEWS0515_forecasting --epoch 10 --sampling 3 --device 0 --DP_steps 3 --DP_num_edges 15 --max_attended_edges 40 --node_score_aggregation sum --ent_score_aggregation sum
+python train.py --warm_start_time 48 --emb_dim 256 128 64 32 --batch_size 128 --lr 0.0002 --dataset ICEWS18_forecasting --epoch 10 --sampling 3 --device 0 --DP_steps 3 --DP_num_edges 15 --max_attended_edges 60 --node_score_aggregation sum --ent_score_aggregation sum --ratio_update 0.75
+python train.py --warm_start_time 48 --emb_dim 256 128 64 32 --batch_size 128 --lr 0.0002 --dataset YAGO1830 --epoch 10 --sampling 3 --device 0 --DP_steps 3 --DP_num_edges 15 --max_attended_edges 60 --node_score_aggregation sum --ent_score_aggregation sum --ratio_update 0.75
 ```
 Evaluation:
 ```
