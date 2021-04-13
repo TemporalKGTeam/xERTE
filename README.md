@@ -1,5 +1,5 @@
 # xERTE: Explainable Subgraph Reasoning for Forecasting on Temporal Knowledge Graphs
-This repository contains code for the reprsentation proposed in the ICLR2020 xpaper titled "[Explainable Subgraph Reasoning for Forecasting on Temporal Knowledge Graphs](https://openreview.net/forum?id=pGIHq1m7PU)".
+This repository contains code for the reprsentation proposed in the ICLR2020 paper titled "[Explainable Subgraph Reasoning for Forecasting on Temporal Knowledge Graphs](https://openreview.net/forum?id=pGIHq1m7PU)".
 
 ## Installation
 
